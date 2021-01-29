@@ -128,7 +128,8 @@ module.exports = {
       },
     },
 
-    repo: `druxt/${meta.name}`,
+    repo: `${meta.repository.url.replace(/^git\+/, "") ||
+      `druxt/${meta.name}`}`,
 
     sidebarDepth: 4,
 
